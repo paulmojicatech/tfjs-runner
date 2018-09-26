@@ -1,0 +1,31 @@
+{
+  "name": "@paulmojicatech/tfjs-runner",
+  "version": "0.0.1",
+  "description": "Implementation of Tensorflow.js",
+  "main": "index.ts",
+  "scripts": {
+    "start": "node index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulmojicatech/tfjs-runner.git"
+  },
+  "keywords": [
+    "Tensorflow.js",
+    "ML",
+    "Typescript"
+  ],
+  "author": "Paul Mojica",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paulmojicatech/tfjs-runner/issues"
+  },
+  "homepage": "https://github.com/paulmojicatech/tfjs-runner#readme",
+  "dependencies": {
+    "@tensorflow/tfjs": "^0.13.1"
+  },
+  "devDependencies": {
+    "typescript": "^3.0.3"
+  }
+}
