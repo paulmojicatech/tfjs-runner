@@ -4,9 +4,13 @@ import { readFileSync } from 'fs';
 export class ConfigService {
     constructor() { }
 
-    getDataPath():string {
+    getConfig(key?:string):string {
         let buffer = readFileSync('./tfjs.conf.json');
         let jsonString = buffer.toLocaleString();
-        return JSON.parse(jsonString).dataPath;
+        if (key){
+            return JSON.parse(jsonString)[key];
+        }
+        return jsonString;
     }
+
 }
