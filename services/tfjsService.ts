@@ -19,7 +19,10 @@ export class TensorflowService {
 
     }
     predict(){
-
+        const a = tf.add(1, 2);
+        console.log(a);
+        a.print();
+        return '';
     }
     loss(){
         

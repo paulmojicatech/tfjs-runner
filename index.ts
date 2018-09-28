@@ -6,7 +6,8 @@ let _configSvc:ConfigService = new ConfigService();
 let _tfjsSvc:TensorflowService = new TensorflowService();
 
 // get data
-//let trainingData:string = _tfjsSvc.getData(_configSvc.getConfig('dataPath') + '/file1.json');
+let historicalData:string = _tfjsSvc.getData(_configSvc.getConfig('dataPath') + '/def_hist.json');
+console.log(historicalData);
 
 _tfjsSvc.predict();
 
