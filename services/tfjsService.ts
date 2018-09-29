@@ -1,31 +1,29 @@
 import * as tf from '@tensorflow/tfjs';
 import { readFileSync } from 'fs';
-import { TensorContainer } from '@tensorflow/tfjs-core/dist/tensor_types';
 
-export class TensorflowService {
-    constructor() { }
+export function getData(filePath:string): string{
+    let buffer = readFileSync(filePath);
+    return buffer.toLocaleString();
+}
 
-    getData(filePath:string): string{
-        let buffer = readFileSync(filePath);
-        return buffer.toLocaleString();
-    }
-    cleanData() {
+export function cleanData() {
 
-    }
-    getModel() {
+}
 
-    }
-    trainModel() {
+export function getModel() {
 
-    }
-    predict(){
-        const a = tf.add(1, 2);
-        console.log(a);
-        a.print();
-        return '';
-    }
-    loss(){
+}
+
+export function trainModel() {
+
+}
+
+export function predict(qbStatValue:number, defStatValue:number){
+    return tf.tidy(() => {
         
-    }
+    });
+}
 
+export function loss(){
+    
 }
